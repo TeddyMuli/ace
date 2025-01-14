@@ -1,7 +1,6 @@
 import { db } from '@/backend/utils/firebase/firebase';
 import { collection, getDocs } from "firebase/firestore"; 
 
-// Fetch functions
 export async function fetchUsers() {
   const snapshot = await getDocs(collection(db, 'users'));
   return snapshot.docs.map(doc => doc.data());
