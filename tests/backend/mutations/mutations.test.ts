@@ -1,4 +1,4 @@
-import { createUser, createClient, createSeller, createJob, createGig, createPayment, createService, createSellerService } from '@/backend/data/mutations/index';
+import { createUser, createClient, createSeller, createJob, createGig, createPayment, createService, createSellerService } from '@/backend/data/mutations';
 import { db } from '@/backend/utils/firebase/firebase';
 import { collection, deleteDoc, getDocs } from "firebase/firestore";
 

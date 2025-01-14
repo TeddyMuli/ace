@@ -1,4 +1,4 @@
-import { fetchUsers, fetchClients, fetchSellers, fetchJobs, fetchGigs, fetchPayments, fetchServices, fetchSellerServices } from '@/backend/data/queries/index';
+import { fetchUsers, fetchClients, fetchSellers, fetchJobs, fetchGigs, fetchPayments, fetchServices, fetchSellerServices } from '@/backend/data/queries';
 import { db } from '@/backend/utils/firebase/firebase';
 import { collection, addDoc } from "firebase/firestore";
 

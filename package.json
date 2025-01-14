@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest"
+    "test": "./run-tests.sh"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.62.15",
