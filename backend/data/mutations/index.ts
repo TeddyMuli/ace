@@ -1,7 +1,6 @@
 import { db } from '@/backend/utils/firebase/firebase';
 import { collection, addDoc, getDocs } from "firebase/firestore"; 
 
-// Create functions
 export async function createUser(user: any) {
   const userRef = await addDoc(collection(db, 'users'), user);
   return userRef.id;
