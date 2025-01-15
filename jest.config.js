@@ -5,8 +5,8 @@ module.exports = {
     '^@/(.*)$': '<rootDir>/$1',
   },
   globals: {
-    'ts-jest': {
-      tsconfig: 'tsconfig.json',
+    transform: {
+      '^.+\\.tsx?$': ['ts-jest', { /* ts-jest config goes here in Jest */ }],
     },
   },
 };

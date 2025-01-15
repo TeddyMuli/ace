@@ -20,8 +20,6 @@ describe('Firebase Authentication', () => {
   });
 
   test('loginUser', async () => {
-    await registerUser(testEmail, testPassword);
-
     const user = await loginUser(testEmail, testPassword);
     expect(user).toBeDefined();
     expect(user.email).toBe(testEmail);
