@@ -1,6 +1,5 @@
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
-
-const auth = getAuth();
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "@/backend/utils/firebase/firebase"
 
 export async function registerUser(email: string, password: string) {
   const userCredential = await createUserWithEmailAndPassword(auth, email, password);
